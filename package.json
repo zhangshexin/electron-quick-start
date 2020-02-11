@@ -1,0 +1,35 @@
+{
+  "name": "electron-quzhengzhuanjia",
+  "version": "1.0.0",
+  "description": "版权家取证过程桌面应用",
+  "main": "main.js",
+  "build": {
+    "appId": "com.anne.bqj.quzhengzhuanjia",
+    "directories": { 
+      "output": "../build"
+    }, 
+    "mac": {
+      "target": ["dmg","zip"]
+    },
+    "win": {
+      "target": ["nsis","zip"]
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . quzhengzhuanjia --win --out ../myClient --arch=x64 --app-version=0.0.1 --electron-version=6.1.7",
+    "dist": "electron-builder --win --x64"
+  },
+  "repository": "https://github.com/electron/electron-quzhengzhuanjia",
+  "keywords": [
+    "banquanjia",
+    "quzhengzhanjia"
+  ],
+  "author": "北京版权家科技发展有限公司",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^6.1.7",
+    "electron-builder": "^22.3.2",
+    "electron-packager": "^14.2.1"
+  }
+}
