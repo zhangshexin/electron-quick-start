@@ -28,7 +28,7 @@
   "author": "北京版权家科技发展有限公司",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^6.1.7",
+    "electron": "^7.2.4",
     "electron-builder": "^22.3.2",
     "electron-packager": "^14.2.1"
   }
